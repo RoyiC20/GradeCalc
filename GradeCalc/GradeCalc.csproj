@@ -9,10 +9,27 @@
 
   <ItemGroup>
     <None Remove="Images\purpleSky.jpg" />
+    <None Remove="Sounds\error.wav" />
+    <None Remove="Sounds\success.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Sounds\error.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\success.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\purpleSky.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AssemblyInfo.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
   </ItemGroup>
 
 </Project>
